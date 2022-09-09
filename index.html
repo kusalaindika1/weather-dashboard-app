@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!---meta tags-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!--style css-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>weather App</title>
+  </head>
+  <!--search section-->
+  <body onload="wetherScreen()">
+    <h1 id="main__title">Weather Dashboard</h1>
+    <div class="main__container">
+      <div class="leftSide">
+        <section class="city__input">
+          <h3>Search for a Citys:</h3>
+          <input type="text" id="cityInput" />
+          <button id="search__button" onclick="GetInfor()">Search</button>
+          <hr />
+        </section>
+      </div>
+
+      <div class="rightSide">
+        <section class="now">
+          <div class="now__title">
+            <h2 id="cityName">London</h2>
+            <h4 id="mainDate">2022/09/06</h4>
+          </div>
+          <div id="mainWeather" class="now__details">coudy</div>
+          <div id="mainTemp" class="now__details">33c</div>
+          <div id="mainHumidity" class="now__details">Humidity</div>
+          <div id="mainWindSpeed" class="now__details">wind speed</div>
+        </section>
+
+        <h2 id="header">5 Days Weather Forecast</h2>
+        <div id="Container">
+          <div class="cards">
+            <p class="weekday" id="day1"></p>
+            <div class="image">
+              <img src="image/123.png" class="imgClass" id="img1" />
+            </div>
+            <p class="minValues" id="day1Min">sunny</p>
+            <p class="maxValues" id="day1Max">6.00am</p>
+          </div>
+          <div class="cards">
+            <p class="weekday" id="day2"></p>
+            <div class="image">
+              <img src="image/123.png" class="imgClass" id="img2" />
+            </div>
+            <p class="minValues" id="day2Min">cloudy</p>
+            <p class="maxValues" id="day2Max">4.44pm</p>
+          </div>
+          <div class="cards">
+            <p class="weekday" id="day3"></p>
+            <div class="image">
+              <img src="image/123.png" class="imgClass" id="img3" />
+            </div>
+            <p class="minValues" id="day3Min">rainy</p>
+            <p class="maxValues" id="day3Max">10.00am</p>
+          </div>
+          <div class="cards">
+            <p class="weekday" id="day4"></p>
+            <div class="image">
+              <img src="image/123.png" class="imgClass" id="img4" />
+            </div>
+            <p class="minValues" id="day4Min">night</p>
+            <p class="maxValues" id="day4Max">12.30am</p>
+          </div>
+          <div class="cards">
+            <p class="weekday" id="day5"></p>
+            <div class="image">
+              <img src="image/123.png" class="imgClass" id="img5" />
+            </div>
+            <p class="minValues" id="day5Min">rainy</p>
+            <p class="maxValues" id="day5Max">5.00am</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start column -->
+
+    <!---script.js-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
