@@ -8,7 +8,7 @@ function GetInfor() {
 
   // fetch weather api key
   fetch(
-    "http://api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
       newName.value +
       "&appid=42322c7325fb1149d38536f24afb3767"
   )
@@ -108,18 +108,18 @@ function GetInfor() {
         if (sep_control) {
           if (i === 0) {
             document.getElementById("img" + (i + 1)).src =
-              " http://openweathermap.org/img/wn/" +
+              " https://openweathermap.org/img/wn/" +
               todayData[i].weather[0].icon +
               "@2x.png";
           } else {
             document.getElementById("img" + (i + 1)).src =
-              " http://openweathermap.org/img/wn/" +
+              " https://openweathermap.org/img/wn/" +
               otherDate[i - 1].weather[0].icon +
               "@2x.png";
           }
         } else {
           document.getElementById("img" + (i + 1)).src =
-            " http://openweathermap.org/img/wn/" +
+            " https://openweathermap.org/img/wn/" +
             otherDate[i].weather[0].icon +
             "@2x.png";
         }
