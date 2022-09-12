@@ -17,5 +17,14 @@ HTML
 CSS
 
 
+
+# repository link
+https://github.com/kusalaindika1/weather-dashboard-app
+
+
+# deploy link
+https://kusalaindika1.github.io/weather-dashboard-app/
+
+
 Screenshots:
 ![weather](image/1234.png)
